@@ -1,0 +1,60 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+* li {
+  list-style: none;
+}
+
+body {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 20vw 20vw 20vw 20vw 20vw;
+      grid-template-columns: 20vw 20vw 20vw 20vw 20vw;
+  -ms-grid-rows: 20vh 20vh 20vh 20vh 20vh;
+      grid-template-rows: 20vh 20vh 20vh 20vh 20vh;
+      grid-template-areas: 'a n n n n' 'a m m m m' 'a m m m m' 'a m m m m' 'a f f f f';
+  background-color: red;
+}
+
+body aside {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 5;
+  -ms-grid-column: 1;
+  grid-area: a;
+  background-color: black;
+}
+
+body nav {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 4;
+  grid-area: n;
+  background-color: #102516;
+}
+
+body menu {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 4;
+  grid-area: m;
+  background-color: black;
+}
+
+body footer {
+  -ms-grid-row: 5;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 4;
+  grid-area: f;
+  background-color: #001d00;
+}
+
+body .font {
+  color: aliceblue;
+  background-color: aliceblue;
+}
+/*# sourceMappingURL=body.css.map */

@@ -1,0 +1,46 @@
+@import '../scss/colors';
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    a{
+        
+    }
+    li{
+        list-style: none;
+    }
+}
+body{
+    display: grid;
+    grid-template-columns: 20vw 20vw 20vw 20vw 20vw;
+    grid-template-rows: 20vh 20vh 20vh 20vh 20vh;
+    grid-template-areas: 'a n n n n'
+                         'a m m m m'
+                         'a m m m m'
+                         'a m m m m'
+                         'a f f f f';
+
+    background-color: $backGroundColorBody;
+
+    aside{
+        grid-area: a;
+        background-color: $backGroundColorAside;
+    }
+    nav{
+        grid-area: n;
+        background-color: $backGroundColorNav;
+    }
+    menu{
+        grid-area: m;
+        background-color: $backGroundColorMenu;
+    }
+    footer{
+        grid-area: f;
+        background-color: $backGroundColorFooter;
+    }
+    .font{
+        color: aliceblue;
+        background-color: aliceblue;
+    }
+}
