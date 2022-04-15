@@ -6,6 +6,59 @@ aside {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  color: black;
+}
+
+aside .share {
+  height: 23vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+}
+
+aside .share img {
+  width: 27px;
+}
+
+aside .share li {
+  border-radius: 2px;
+  padding: 2px 15px;
+  margin-left: 30px;
+}
+
+aside .share li:hover {
+  background-color: rgba(128, 128, 128, 0.212);
+}
+
+aside menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+aside menu ul a {
+  border-bottom: 2px solid white;
+}
+
+aside menu ul a li {
+  margin-left: 30px;
+  padding: 10px;
+}
+
+aside menu ul a:hover {
+  background-color: rgba(66, 66, 66, 0.911);
+}
+
+aside menu .active {
+  background-color: rgba(66, 66, 66, 0.911);
 }
 /*# sourceMappingURL=aside.css.map */

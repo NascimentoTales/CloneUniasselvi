@@ -4,17 +4,19 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    color: $colorText;
     a{
-        
+        text-decoration: none;
     }
     li{
         list-style: none;
     }
+    
 }
 body{
     display: grid;
     grid-template-columns: 20vw 20vw 20vw 20vw 20vw;
-    grid-template-rows: 20vh 20vh 20vh 20vh 20vh;
+    grid-template-rows: 23vh 20vh 20vh 20vh 20vh;
     grid-template-areas: 'a n n n n'
                          'a m m m m'
                          'a m m m m'
@@ -39,8 +41,6 @@ body{
         grid-area: f;
         background-color: $backGroundColorFooter;
     }
-    .font{
-        color: aliceblue;
-        background-color: aliceblue;
-    }
+    
+    
 }

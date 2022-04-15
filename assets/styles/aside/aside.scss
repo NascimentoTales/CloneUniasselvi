@@ -1,19 +1,47 @@
-aside{
+@import '../scss/colors';
 
+aside{
     display: flex;
     flex-direction: column;
-    color: black;
    
+    .share{
+        height: 23vh;
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        
+        img{
+            width: 27px;
+        }
+        li{
+            border-radius: 2px;
+            padding: 2px 15px;
+            margin-left: 30px;
+        }
+        li:hover{
+            background-color: rgba(128, 128, 128, 0.212);            
+        }
+    }
     menu{
-
+       
         ul{
+            display: flex;
+            flex-direction: column;
             a{
-
+                border-bottom: 2px solid rgb(255, 255, 255);
+                
                 li{
-
+                    margin-left: 30px;
+                    padding: 10px;
                 }
+                
             }
-
+            a:hover{
+                background-color: $backGroundColorAHover;
+            }
+        }
+        .active{
+            background-color: $backGroundColorAHover;
         }
     }
 }
